@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🌳 Árvore Genealógica Bovo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto em **React** para criar e exibir a árvore genealógica da família Bovo, desde o meu tataravô **Fruttuoso Bovo**, que chegou ao Brasil vindo da Itália, até a geração atual.
 
-## Available Scripts
+A ideia surgiu depois de uma conversa com meu tio-avô, que compartilhou detalhes valiosos sobre a trajetória da nossa família. Com isso, decidi criar um site para organizar e preservar essas histórias, permitindo que todos possam explorar as gerações e fortalecer o vínculo com nossas raízes.
 
-In the project directory, you can run:
+## 📦 Tecnologias
 
-### `npm start`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **react-d3-tree**: Biblioteca baseada em **D3.js** para criar árvores interativas e personalizáveis.  
+  📌 [Repositório do react-d3-tree](https://github.com/bkrem/react-d3-tree)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A `react-d3-tree` permite renderizar hierarquias complexas de forma elegante, com opções de customização para a aparência e o comportamento dos nós da árvore.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Objetivo
 
-### `npm test`
+- Visualizar e compartilhar a história da família Bovo de maneira interativa.
+- Organizar as gerações, conectando pais, tios, primos e irmãos de forma clara.
+- Preservar as memórias familiares para as próximas gerações.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Estrutura básica do projeto
 
-### `npm run build`
+```bash
+src/
+├── components/
+│ └── FamilyTree.js
+├── App.js
+├── index.js
+└── ...
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O componente **FamilyTree.js** contém a árvore genealógica, usando o `react-d3-tree` para renderizar a hierarquia familiar.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Como usar
 
-### `npm run eject`
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/arvore-genealogica-bovo.git
+    cd arvore-genealogica-bovo
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Instale as dependências:
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Inicie o projeto:
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Abra no navegador em [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+💡 **Quer contribuir?**  
+Entre em contato para expandirmos juntos essa árvore e mantermos viva a história da família Bovo!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
