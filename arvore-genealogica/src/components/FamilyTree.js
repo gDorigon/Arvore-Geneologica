@@ -6,7 +6,7 @@ const myTreeData = [
       name: 'Fruttuoso Bovo', // Tataravô
       children: [
          {
-            name: 'Bisavô 1',
+            name: 'Antonio Bovo',
             children: [
                {
                   name: 'João Bovo',
@@ -20,9 +20,7 @@ const myTreeData = [
                      },
                      {
                         name: 'Leila Bovo',
-                        children: [
-                           // Adicione filhos aqui se quiser
-                        ],
+                        children: [],
                      },
                      {
                         name: 'Lilian Bovo',
@@ -32,7 +30,15 @@ const myTreeData = [
                         ],
                      },
                   ],
-               }
+               },
+               { name: 'Rosa', children: [] },
+               { name: 'Getulio', children: [] },
+               { name: 'Henrique', children: [] },
+               { name: 'Vitoriano', children: [] },
+               { name: 'José', children: [] },
+               { name: 'Matilde', children: [] },
+               { name: 'Luzia', children: [] },
+               { name: 'Adelina', children: [] },
             ],
          },
          {
@@ -79,7 +85,7 @@ const myTreeData = [
 const FamilyTree = () => {
    const containerStyles = {
       width: '100%',
-      height: '700px', // aumentei para acomodar mais nós
+      height: '700px',
    };
 
    return (
@@ -88,7 +94,7 @@ const FamilyTree = () => {
             data={myTreeData}
             orientation="vertical"
             pathFunc="elbow"
-            translate={{ x: 300, y: 50 }} // ajustar posição inicial
+            translate={{ x: 300, y: 50 }}
             collapsible={true}
          />
       </div>
